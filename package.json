@@ -1,0 +1,22 @@
+{
+  "name": "package",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NoelCarrasco29/Introduccion-backend.git"
+  },
+  "keywords": [
+    "HTTP"
+  ],
+  "author": "Noel carrasco",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NoelCarrasco29/Introduccion-backend/issues"
+  },
+  "homepage": "https://github.com/NoelCarrasco29/Introduccion-backend#readme"
+}
