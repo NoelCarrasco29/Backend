@@ -11,7 +11,7 @@ http.createServer(function (request, response){
         filePath = './index.html';
     }
 
-});
+
 var extname =String (path.extname(filePath)).toLowerCase();
 var contentType= 'text/html';
 var mimeTypes = {
@@ -20,7 +20,7 @@ var mimeTypes = {
     '.css': 'text/css',
     '.png': 'image/png'
 };
-
+contentType=mimeTypes[extname] || 'application/octet-stream';
 fs.readFile(filePath, function(error, content){
     if(error){
         if(error.code == 'ENOENT'){
@@ -42,4 +42,3 @@ fs.readFile(filePath, function(error, content){
 });
 }).listen(3000);
 console.log('Server Running at http://192.168.50.180/3000/');
-});
